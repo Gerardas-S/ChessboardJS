@@ -2,7 +2,7 @@ import * as THREE from 'https://unpkg.com/three@0.126.1/build/three.module.js';
 import {TrackballControls} from 'https://unpkg.com/three@0.126.1/examples/jsm/controls/TrackballControls.js';
 import { RGBELoader } from 'https://unpkg.com/three@0.126.1/examples/jsm/loaders/RGBELoader.js';
 import { OBJLoader } from 'https://unpkg.com/three@0.126.1/examples/jsm/loaders/OBJLoader.js';
-import * as dat from 'https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.js';
+//import * as dat from 'https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.js';
 
 let camera, controls, scene, renderer, spotLight;
 
@@ -35,6 +35,7 @@ animate();
 function init() {
 
   //GUI controls section
+  /*
   const gui = new dat.GUI()
 
   gui.add(parameters.shadows, 'shadowsEnable').name("Enable shadows")
@@ -70,7 +71,7 @@ function init() {
 
   gui.add(parameters.scene, 'rotationEnable').name("Enable rotation")
     .onChange(()=>{console.log(parameters.scene)})
-
+  */
   //Scene
   scene = new THREE.Scene()
 
